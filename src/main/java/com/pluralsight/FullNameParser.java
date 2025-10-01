@@ -7,7 +7,10 @@ public class FullNameParser {
         System.out.print("Please enter your name (as first last or first middle last): ");
         String name = scanner.nextLine();
         name = name.trim();
+        nameSplit(name);
+    }
 
+    public static void nameSplit(String name){
         String[] nameParts = name.split(" ");
         if ((nameParts.length) > 2){
             String first = nameParts[0];
