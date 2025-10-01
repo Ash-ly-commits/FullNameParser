@@ -17,16 +17,13 @@ public class FullNameParser {
             String mid = nameParts[1];
             String last = nameParts[2];
 
-            System.out.println("First name: " + first);
-            System.out.println("Middle name: " + mid);
-            System.out.println("Last name: " + last);
+            System.out.printf("First name: %s\nMiddle name: %s\nLast name: %s",first,mid,last);
         }
         else {
             String first = nameParts[0];
             String last = nameParts[1];
 
-            System.out.println("First name: " + first);
-            System.out.println("Last name: " + last);
+            System.out.printf("First name: %s\nLast name: %s",first,last);
         }
     }
 }
