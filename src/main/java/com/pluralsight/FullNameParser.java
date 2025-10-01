@@ -29,7 +29,7 @@ public class FullNameParser {
             System.out.printf("First name: %s\nLast name: %s",first,last);
         }
         else {
-            System.out.print("\nInvalid input.");
+            System.out.print("\nInvalid input. Try again :P");
         }
     }
 }
