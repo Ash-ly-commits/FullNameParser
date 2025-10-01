@@ -2,6 +2,7 @@ package com.pluralsight;
 import java.util.*;
 
 public class FullNameParser {
+    // Main saves full name in string, trims it, and calls function to split it up.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter your name (as first last or first middle last): ");
@@ -10,6 +11,8 @@ public class FullNameParser {
         nameSplit(name);
     }
 
+    // This method splits full name into list of names and outputs them
+    // If statement separates input including or excluding middle name
     public static void nameSplit(String name){
         String[] nameParts = name.split(" ");
         if ((nameParts.length) > 2){
