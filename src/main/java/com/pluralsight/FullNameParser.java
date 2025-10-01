@@ -15,18 +15,21 @@ public class FullNameParser {
     // If statement separates input including or excluding middle name
     public static void nameSplit(String name){
         String[] nameParts = name.split(" ");
-        if ((nameParts.length) > 2){
+        if ((nameParts.length) == 3){
             String first = nameParts[0];
             String mid = nameParts[1];
             String last = nameParts[2];
 
             System.out.printf("First name: %s\nMiddle name: %s\nLast name: %s",first,mid,last);
         }
-        else {
+        else if ((nameParts.length) == 2){
             String first = nameParts[0];
             String last = nameParts[1];
 
             System.out.printf("First name: %s\nLast name: %s",first,last);
+        }
+        else {
+            System.out.print("\nInvalid input.");
         }
     }
 }
